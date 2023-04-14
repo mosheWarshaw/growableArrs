@@ -22,9 +22,9 @@ package growableArrs;
  * is converted into indexes that can be used for the get the right elem from the right
  * inner arr without additional complexity.
  * 
- * The UnifromGrowableArr is the same idea as the DoublingGrowableArr, except the inner arrs are a
+ * The UniformGrowableArr is the same idea as the DoublingGrowableArr, except the inner arrs are a
  * uniform size. The user determines the size the inner arrs should be, and they're all that size.
- * If the user chooses a very bad inner arr size then the UnifromGrowableArr will perform more copies
+ * If the user chooses a very bad inner arr size then the UniformGrowableArr will perform more copies
  * than an ArrayList would in the same situation.*/
 public abstract class GrowableArr<T> {
 	public abstract void doubleArr();
