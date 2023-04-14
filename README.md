@@ -6,7 +6,8 @@ hold the elements. the "outer arr" holds the "inner arrs".
 -"arrIndex" is the index of the inner arr that holds the elem that the user is looking for
 (or whatever other purpose you're acessingor modifying an elem in the arr).
 -"elemIndex" is the index in the inner arr that holds the elem.
-<br/><br/>
+<br/>
+<br/>
 When the java ArrayList runs out of space it creates a new array that is twice the size of the
 current one, and it copies the elems into the new arr. I have 2 different growable arrays,
 the DoublingGrowableArr and the UniformGrowableArr, that are each more efficient.
