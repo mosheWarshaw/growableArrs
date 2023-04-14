@@ -19,7 +19,7 @@ is created, and the filled and empty inner arrs are copied into a new
 outer arr that has space for 2 inner arrs. The key difference between the ArrayList and the
 DoublingGrowableArr is the ArrayList copies elems when more space is needed, and my growable arr
 copies arr references, which significantly decreases the amount of
-copies made.
+copies made.<br/>
 The methods allow the user to pass in an index as if it was a 1d-arr, and the index
 is converted into indexes that can be used for the get the right elem from the right
 inner arr without additional complexity.
