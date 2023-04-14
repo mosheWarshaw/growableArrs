@@ -51,14 +51,14 @@ public class DoublingGrowableArr<T> extends GrowableArr<T>{
 		 * 
 		 * summation:
 		 * 
-		 *     n
+		 *     	n
 		 *  -------
 		 *  \
 		 *   \
 		 *   /		2^i       
 		 *  /
 		 *  -------
-		 *   i = 0
+		 *   	i = 0
 		 * 
 		 * 
 		 * closed form: 2^(n + 1) - 1
