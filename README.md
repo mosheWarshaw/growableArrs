@@ -1,11 +1,11 @@
 Terminology:
--"arr" is short for "array".
--"elem" is short for "element".
--an "inner arr" is one of the 1d-arrs inside the "outer arr". the inner arrs
+<br/>-"arr" is short for "array".
+<br/>-"elem" is short for "element".
+<br/>-an "inner arr" is one of the 1d-arrs inside the "outer arr". the inner arrs
 hold the elements. the "outer arr" holds the "inner arrs".
--"arrIndex" is the index of the inner arr that holds the elem that the user is looking for
+<br/>-"arrIndex" is the index of the inner arr that holds the elem that the user is looking for
 (or whatever other purpose you're acessingor modifying an elem in the arr).
--"elemIndex" is the index in the inner arr that holds the elem.
+<br/>-"elemIndex" is the index in the inner arr that holds the elem.
 <br/>
 <br/>
 When the java ArrayList runs out of space it creates a new array that is twice the size of the
