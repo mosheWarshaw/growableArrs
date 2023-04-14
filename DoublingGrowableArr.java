@@ -52,12 +52,12 @@ public class DoublingGrowableArr<T> extends GrowableArr<T>{
 		 * summation:
 		 * 
 		 *     n
-		 * 	-------
-		 * 	\
-		 * 	 \
-		 * 	 /		2^i       
-		 * 	/
-		 * 	-------
+		 *  -------
+		 *  \
+		 *   \
+		 *   /		2^i       
+		 *  /
+		 *  -------
 		 *   i = 0
 		 * 
 		 * 
