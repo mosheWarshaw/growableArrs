@@ -19,7 +19,7 @@ public class DoublingArr<T> extends GrowableArr<T>{
 		 * This number is the arrIndex; it doesn't need to be converted to 0-based-counting
 		 * because the first inner arr is doubled 0 times, so the log operation returns 0
 		 * for log 1 because 2^0 equals 1.
-		 * 		  2 
+		 *        2 
 		 * 
 		 * To the user the arr looks like
 		 * (the following is the arr of elems (the letters) with an arr of the indexes beneath
