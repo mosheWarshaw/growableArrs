@@ -26,3 +26,7 @@ For example, where the inner arr size is 1 (this number is chosen for simplicity
 [[a]] becomes [[a], [null]].<br/>
 [[a], [b]] becomes [[a], [b], [null], [null]].<br/>
 [[a], [b], [c], [d]] becomes [[a], [b], [c], [d], [null], [null], [null], [null]].
+
+&nbsp;&nbsp;&nbsp;&nbsp;For the UniformArr and DoublingUniformArr, the user chooses how big the arr should initially be. Although the UniformArr could end up doing more copies if a very bad inner arr size is chosen, the user choosing the intial size (the same number the user would choose for an ArrayList's initial size, if the user was usng an ArrayList) of the DoublingUniformArr ensures that it will never do more copies than the ArrayList, unless the user chooses an inner arr size of 1.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;The DoublingArr and the UniformArr provide growable arr options that are better for certain cases than the DoublingUniformArr. The UniformArr is best when the user has a better idea of how many elems they would need to store, and therefore wouldn't need the arr to grow twice the size if the user slightly underestimated. It's also best when the user knows that data will need to be stored in similar increments spread out over the life of the program, then doubling the arr each time would mean a large part of memory is just waiting to be used.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;The DoublingArr provides the option to the user of not having to deal with initial and inner arr sizes. The 2-arr starts with a single inner arr of size 1.
