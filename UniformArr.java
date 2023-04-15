@@ -37,7 +37,8 @@ public class UniformArr<T> extends GrowableArr<T>{
 		outerArr = tempOuterArr;
 	}
 	public int calculateNewSize(int prevSize) {
-		//This simple calculation is separated into its own method so DoublingUniformArr can override it, because this alulction is ht eonly differnece between that class and this one.
+		/*This simple calculation is separated into its own method so DoublingUniformArr can override it, because this calculation is the only
+		* difference between that class and this one.*/
 		return prevSize + 1;
 	}
 	
