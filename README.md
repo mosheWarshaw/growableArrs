@@ -9,7 +9,7 @@ Terminology:
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;When the java ArrayList runs out of space it creates a new array that is twice the size of the current one, and it copies the elems into the new arr. I have 3 different growable arrays, the DoublingArr, the UniformArr, and the DoublingUniformArr that are each more efficient. The key idea of all of them is that there's a 2d-arr, and elems are stored in the inner arrs, so when more space is needed a new 2d arr is created, but the elems aren't copied into it, rather the references of the inner arrs holding the elems are copied. As a result, less copies are done when growing the arr, and they do so while allowing the user to pass indexes into the methods as if the implementation was a 1d-arr.<br/>
 
-&nbsp;&nbsp;&nbsp;&nbsp;My DoublingArr is a 2d-array. When an inner arr is filled a new inner arr that is twice the size of the previous inner arr is created, and the new and filled inner arrs are copied to a new outer arr that can hold them the inner arrs.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;When an inner arr is filled a new inner arr that is twice the size of the previous inner arr is created, and the new and filled inner arrs are copied to a new outer arr that can hold them the inner arrs.<br/>
 For example (using letters for elems) this is how the arr would grow (I demonstrate what a filled arr looks like when grown):<br/>
 [[a]] becomes [[a], [null, null]].<br/>
 [[a], [b, c]] becomes [[a], [b, c], [null, null, null, null]].<br/>
